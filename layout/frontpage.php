@@ -56,7 +56,38 @@ echo $OUTPUT->doctype() ?>
     <link rel="stylesheet" href="<?php echo theme_enlightlite_theme_url(); ?>/style/slick.css" />
     <script type="text/javascript" src="<?php echo theme_enlightlite_theme_url();?>/javascript/slick.js"></script>
     <!--About Us-->
+<<<<<<< HEAD
     <?php
+=======
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            if ( $('body').hasClass('dir-rtl') ) {
+                rtl = true;
+            } else {
+                rtl = false;
+            }
+
+            $(".course-slider").slick({
+                arrows:true ,
+                swipe:true,
+                prevArrow:'#available-courses .pagenav .slick-prev',
+                nextArrow: '#available-courses .pagenav .slick-next',
+                rtl:rtl
+            });
+            var prow = $(".course-slider").attr("data-crow");
+            prow = parseInt(prow);
+            if (prow < 2) {
+                $("#available-courses .pagenav").hide();
+            }
+        })
+
+    </script>
+    <?php
+
+    // $PAGE->requires->js('/theme/enlightlite/javascript/slick.js');.
+
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
     $status = theme_enlightlite_get_setting('marketingSpot1_status');
     if ($status == "1") {
         echo theme_enlightlite_marketingspot1();
@@ -113,12 +144,21 @@ echo $OUTPUT->doctype() ?>
 
     <?php
     $mspot2status = theme_enlightlite_get_setting('marketingSpot2_status');
+<<<<<<< HEAD
     $msp2title = theme_enlightlite_get_setting('mspot2title', 'format_text');
     $msp2title = theme_enlightlite_lang($msp2title);
     $msp2desc = theme_enlightlite_get_setting('mspot2desc', 'format_text');
     $msp2desc = theme_enlightlite_lang($msp2desc);
     $msp2url = theme_enlightlite_get_setting('mspot2url');
     $msp2urltxt = theme_enlightlite_get_setting('mspot2urltext', 'format_text');
+=======
+    $msp2title = theme_enlightlite_get_setting('mspot2title', 'format_html');
+    $msp2title = theme_enlightlite_lang($msp2title);
+    $msp2desc = theme_enlightlite_get_setting('mspot2desc', 'format_html');
+    $msp2desc = theme_enlightlite_lang($msp2desc);
+    $msp2url = theme_enlightlite_get_setting('mspot2url');
+    $msp2urltxt = theme_enlightlite_get_setting('mspot2urltext', 'format_html');
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
     $msp2urltxt = theme_enlightlite_lang($msp2urltxt);
     $mspot2urltarget = theme_enlightlite_get_setting('mspot2urltarget');
     $target = ($mspot2urltarget == '1') ? "_blank" : "_self";
@@ -148,7 +188,11 @@ echo $OUTPUT->doctype() ?>
 <script>
 require(['jquery'], function($) {
 
+<<<<<<< HEAD
     var parent = $("#frontpage-course-list #available-courses").parents('div#frontpage-course-list')
+=======
+    var parent = $("#frontpage-available-course-list #available-courses").parents('div#frontpage-available-course-list')
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
     parent.addClass('frontpage-available-course frontpageblock-theme');
     $("#mycourses").parents('div#frontpage-course-list').addClass('frontpage-mycourse-list');
 
@@ -183,6 +227,7 @@ require(['jquery'], function($) {
     })
 });
 
+<<<<<<< HEAD
 $(document).ready(function() {
     if ( $('body').hasClass('dir-rtl') ) {
         rtl = true;
@@ -203,6 +248,10 @@ $(document).ready(function() {
         $("#available-courses .pagenav").hide();
     }
 })
+=======
+
+
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 </script>
 
 <?php

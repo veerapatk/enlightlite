@@ -32,6 +32,7 @@ $string['categoryimgheading'] = 'imágenes Categoría';
 $string['categoryimgheadingsub'] = 'Utilice las imágenes para representar sus categorías';
 $string['categoryimgdesc'] = 'Esto le permitirá configurar las imágenes para cada categoría de tamaño course.The recomendada es width = 200px y altura = 200px';
 $string['categoryimgcategory'] = 'La imagen para la categoría: {$a->category}.';
+<<<<<<< HEAD
 $string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot">
 <img class=img-polaroid src="enlightlite/pix/screenshot.jpg" />
 <h3>Theme Credits</h3>
@@ -48,6 +49,9 @@ Authors: LMSACE Dev Team<br>
 Contact: info@lmsace.com<br>
 Website: <a href="http://www.lmsthemes.com">www.lmsthemes.com</a><br>
 </p>';
+=======
+$string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><img class=img-polaroid src="enlightlite/pix/screenshot.jpg" /><h3>Theme Credits</h3><p><h3>Moodle Enlightlite theme</h3><p>This theme is based on the Bootstrapbase Moodle theme.</p><p><a href="http://getbootstrap.com">http://getbootstrap.com</a></p><p>Authors: LMSACE Dev Team<br>Contact: info@lmsace.com<br>Website: <a href="http://www.lmsthemes.com">www.lmsthemes.com</a><br></p>';
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 $string['configtitle'] = 'Enlightlite';
 $string['copyright'] = 'Derechos de autor';
 $string['copyrightdefault'] = 'Derechos de autor y copia; 2015 - Su Nombre & reg;. Empresa Reservados todos los derechos.';
@@ -83,10 +87,14 @@ $string['footerblink3default'] = 'lang:about|http://www.example.com/about-us.php
 lang:jobs|http://www.example.com/jobs.php
 lang:contactus|http://www.example.com/contact-us.php
 lang:legal|http://www.example.com/legal.php';
+<<<<<<< HEAD
 $string['footerblink_desc'] = 'Puede configurar Footer Bloquear {$a->blockno} Links
  aquí para ser mostradas por temas. Cada línea se compone de un texto de menú
   (lang: language_key o texto plano), una URL enlace separados por caracteres de tubería. Por ejemplo:
 <pre>
+=======
+$string['footerblink_desc'] = 'Puede configurar Footer Bloquear {$a->blockno} Links aquí para ser mostradas por temas. Cada línea se compone de un texto de menú  (lang: language_key o texto plano), una URL enlace separados por caracteres de tubería. Por ejemplo:<pre>
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 lang:moodlecommunity|https://moodle.org
 Moodle Support|https://moodle.org/support
 </pre>';
@@ -114,6 +122,7 @@ $string['region-side-pre'] = 'Izquierda';
 $string['signup'] = 'contratar';
 $string['slidecaption'] = 'leyenda de diapositivas';
 $string['slidecaptiondefault'] = 'Explora Online';
+<<<<<<< HEAD
 $string['slidecaptiondesc'] = 'Introduzca el título de diapositivas como texto plano
  o lang: language_key para soporte multilingüe (Ex <b> lang: Información </ b>).
   <br/> Usted puede encontrar las claves del lenguaje predeterminado aquí: / tema / Enlightlite / lang [CARPETA].';
@@ -132,6 +141,19 @@ $string['slideshowdesc'] = 'Esto crea una presentación de diapositivas de hasta
 $string['slideinterval'] = 'Presentación Intervalo';
 $string['slideintervaldesc'] = 'La cantidad de tiempo de demora entre el ciclismo de forma automática un elemento.
 <br/> favor dar los milisegundos 1 segundo = 1000 milisegundos';
+=======
+$string['slidecaptiondesc'] = 'Introduzca el título de diapositivas como texto plano o lang: language_key para soporte multilingüe (Ex <b> lang: Información </ b>). <br/> Usted puede encontrar las claves del lenguaje predeterminado aquí: / tema / Enlightlite / lang [CARPETA].';
+$string['slideimage'] = 'imagen Diapositiva';
+$string['slideimagedesc'] = 'La imagen debe ser 1366px X 385px.';
+$string['slidedesc'] = 'Deslice Descripción';
+$string['slidedesctext'] = 'Introduzca la descripción diapositiva como texto plano o lang: language_key para soporte multilingüe (Ex <b> lang: Información </ b>). <br/> Usted puede encontrar las claves del lenguaje predeterminado aquí: / tema / Enlightlite / lang [CARPETA].';
+$string['slidedescdefault'] = '<p>Education on awesome unique moodle theme.</p>';
+$string['slideno'] = 'Deslice {$a->slide}';
+$string['slidenodesc'] = 'Introduzca los ajustes de diapositiva {$a->slide}.';
+$string['slideshowdesc'] = 'Esto crea una presentación de diapositivas de hasta doce diapositivas para usted para promover elementos importantes de su sitio. El espectáculo es sensible en altura de la imagen se fija de acuerdo al tamaño de pantalla.';
+$string['slideinterval'] = 'Presentación Intervalo';
+$string['slideintervaldesc'] = 'La cantidad de tiempo de demora entre el ciclismo de forma automática un elemento. <br/> favor dar los milisegundos 1 segundo = 1000 milisegundos';
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 $string['slideshowheading'] = 'presentación de diapositivas';
 $string['slideshowheadingsub'] = 'Presentación de la primera página';
 $string['slideurl'] = 'enlace de diapositivas';
@@ -198,6 +220,7 @@ $string['popularcourses'] = 'cursos populares';
 $string['newcourses'] = 'Nuevos cursos';
 $string['seeallcourses'] = 'Ver todos los cursos';
 $string['slideurltext'] = 'Texto del enlace de diapositivas';
+<<<<<<< HEAD
 $string['slideurltextdesc'] = 'Introduzca el texto del vínculo diapositiva como texto plano
  o lang: language_key para soporte multilingüe (Ex <b> lang: Información </ b>).
   <br/> Usted puede encontrar las claves del lenguaje predeterminado aquí: / tema / Enlightlite / lang [CARPETA].';
@@ -213,6 +236,15 @@ $string['mspot2urldesc'] = 'entrar en el lugar de comercialización 2 - enlace';
 $string['mspot2urltxtdesc'] = 'Introduzca el lugar de comercialización{$a->msno} texto
  del vínculo como texto sin formato o lang: language_key
   para soporte multilingüe (Ex <b> lang: Información </ b>).
+=======
+$string['slideurltextdesc'] = 'Introduzca el texto del vínculo diapositiva como texto plano o lang: language_key para soporte multilingüe (Ex <b> lang: Información </ b>). <br/> Usted puede encontrar las claves del lenguaje predeterminado aquí: / tema / Enlightlite / lang [CARPETA].';
+$string['mspottitledesc'] = 'Introduzca el lugar de comercialización {$a->msno} título como texto plano o lang: language_key para soporte multilingüe (Ex <b> lang: Información </ b>). <br/> Usted puede encontrar las claves del lenguaje predeterminado aquí: / tema / Enlightlite / lang [CARPETA].';
+$string['mspotdescdesc'] = 'Introduzca el lugar de comercialización {$a->msno} descripción como texto plano o lang: language_key para soporte multilingüe (Ex <b> lang: Información </ b>). <br/> Usted puede encontrar las claves del lenguaje predeterminado aquí: / tema / Enlightlite / lang [CARPETA].';
+$string['link'] = 'enlace';
+$string['text'] = 'texto';
+$string['mspot2urldesc'] = 'entrar en el lugar de comercialización 2 - enlace';
+$string['mspot2urltxtdesc'] = 'Introduzca el lugar de comercialización{$a->msno} texto del vínculo como texto sin formato o lang: language_key para soporte multilingüe (Ex <b> lang: Información </ b>).
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
    <br/> Usted puede encontrar las claves del lenguaje predeterminado aquí: / tema / Enlightlite / lang [CARPETA].';
 $string['copyrightheading'] = 'Change copyright information';
 $string['viewallcourses'] = 'View all Courses';

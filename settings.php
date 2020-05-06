@@ -320,8 +320,12 @@ if ($ADMIN->fulltree) {
     $name = 'theme_enlightlite/mspot1media';
     $title = get_string('media', 'theme_enlightlite');
     $description = get_string('mspotmediadesc', 'theme_enlightlite', array('msno' => '1'));
+<<<<<<< HEAD
     $default = '<iframe src="https://www.youtube.com/embed/zKD91RTMwK0"
     allowfullscreen="" width="560" height="315" frameborder="0"></iframe>';
+=======
+    $default = '';
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
     $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
     $temp->add($setting);
     /* Marketing Spot 1*/

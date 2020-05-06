@@ -26,7 +26,11 @@ defined('MOODLE_INTERNAL') || die();
 
 $THEME->name = 'enlightlite';
 
+<<<<<<< HEAD
 $THEME->sheets = [ 'font-awesome.min'];
+=======
+$THEME->sheets = ['enlightlite'];
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 
 $THEME->editor_sheets = [];
 
@@ -42,6 +46,7 @@ $THEME->requiredblocks = '';
 
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 
+<<<<<<< HEAD
 $THEME->prescsscallback = 'theme_enlightlite_get_pre_scss';
 
 $THEME->extrascsscallback = 'theme_enlightlite_get_extra_scss';
@@ -52,6 +57,18 @@ $THEME->scss = function($theme) {
 
     return theme_enlightlite_get_main_scss_content($theme);
 };
+=======
+/*$THEME->prescsscallback = 'theme_enlightlite_get_pre_scss';
+
+$THEME->extrascsscallback = 'theme_enlightlite_get_extra_scss';*/
+
+$THEME->csstreepostprocessor = 'theme_enlightlite_css_tree_post_processor';
+
+/*$THEME->scss = function($theme) {
+
+    return theme_enlightlite_get_main_scss_content($theme);
+};*/
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 
 $THEME->javascripts_footer = ['theme'];
 

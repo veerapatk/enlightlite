@@ -1,4 +1,5 @@
 {{!
+<<<<<<< HEAD
     // This file is part of Moodle - http://moodle.org/
     //
     // Moodle is free software: you can redistribute it and/or modify
@@ -27,6 +28,29 @@
     Admin time setting template.
 
     Enlightlite 2 column layout template.
+=======
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_boost/columns2
+
+    Admin time setting template.
+
+    Boost 2 column layout template.
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 
     Context variables required for this template:
     * sitename - The name of the site
@@ -55,6 +79,7 @@
         "hasregionmainsettingsmenu": false
     }
 }}
+<<<<<<< HEAD
 {{{ output.doctype }}}
 <html {{{ output.htmlattributes }}}>
 <head>
@@ -63,6 +88,9 @@
     {{{ output.standard_head_html }}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+=======
+{{> theme_boost/head }}
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 
 <body {{{ bodyattributes }}}>
 
@@ -73,6 +101,7 @@
     {{>theme_enlightlite/header}}
 
     <div id="page" class="container-fluid">
+<<<<<<< HEAD
         {{{ output.full_header }}}
 
         <div id="page-content" class="row">
@@ -84,16 +113,37 @@
                 {{/hasregionmainsettingsmenu}}
                 <section id="region-main" {{#hasblocks}}class="has-blocks"{{/hasblocks}}>
                     <div class="card card-block">
+=======
+
+        {{{ output.full_header }}}
+
+        <div id="page-content" class="row pb-3">
+            <div id="region-main-box" class="col-12">
+                {{#hasregionmainsettingsmenu}}
+                <div id="region-main-settings-menu" class="d-print-none {{#hasblocks}}has-blocks{{/hasblocks}}">
+                    <div> {{{ output.region_main_settings_menu }}} </div>
+                </div>
+                {{/hasregionmainsettingsmenu}}
+                <section id="region-main" {{#hasblocks}}class="has-blocks mb-3"{{/hasblocks}}>
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
                     {{#hasregionmainsettingsmenu}}
                         <div class="region_main_settings_menu_proxy"></div>
                     {{/hasregionmainsettingsmenu}}
                     {{{ output.course_content_header }}}
                     {{{ output.main_content }}}
+<<<<<<< HEAD
                     {{{ output.course_content_footer }}}
                     </div>
                 </section>
                 {{#hasblocks}}
                 <section data-region="blocks-column" class="hidden-print">
+=======
+                    {{{ output.activity_navigation }}}
+                    {{{ output.course_content_footer }}}
+                </section>
+                {{#hasblocks}}
+                <section data-region="blocks-column" class="d-print-none">
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
                     {{{ sidepreblocks }}}
                 </section>
                 {{/hasblocks}}
@@ -103,4 +153,9 @@
     {{> theme_boost/nav-drawer }}
 </div>
 
+<<<<<<< HEAD
 {{>theme_enlightlite/footer}}
+=======
+{{> theme_enlightlite/footer }}
+
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82

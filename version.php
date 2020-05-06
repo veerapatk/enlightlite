@@ -25,21 +25,36 @@
 defined('MOODLE_INTERNAL') || die;
 
 // The current component version (Date: YYYYMMDDXX).
+<<<<<<< HEAD
 $plugin->version = 2017101400;
+=======
+$plugin->version = 2019120500;
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 
 // This version's maturity level.
 $plugin->maturity = MATURITY_STABLE;
 
 // Requires this Moodle version
+<<<<<<< HEAD
 $plugin->requires  = 2016120500;
 
 // Plugin release version.
 $plugin->release = 'v1.4';
+=======
+$plugin->requires  = 2019111800;
+
+// Plugin release version.
+$plugin->release = 'v3.8';
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 
 // Full name of the plugin.
 $plugin->component = 'theme_enlightlite';
 
 // Plugin dependencies and dependencies version.
 $plugin->dependencies = [
+<<<<<<< HEAD
     'theme_boost' => 2016120500
+=======
+    'theme_boost' => 2019022600
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 ];

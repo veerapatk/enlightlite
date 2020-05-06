@@ -38,7 +38,12 @@
     * cookieshelpiconformatted - Formatted html of cookies help icon,
     * errorformatted - Formatted error,
     * logourl - Flag, logo url,
+<<<<<<< HEAD
     * sitename - Name of site.
+=======
+    * sitename - Name of site,
+    * logintoken - Random token to protect login request.
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 
     Example context (json):
     {
@@ -87,13 +92,22 @@
         "cookieshelpiconformatted": "",
         "errorformatted": "",
         "logourl": false,
+<<<<<<< HEAD
         "sitename": "Beer & Chips"
+=======
+        "sitename": "Beer & Chips",
+        "logintoken": "randomstring"
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
     }
 }}
 
 <div class="m-y-3 hidden-sm-down"></div>
 <div class="row">
+<<<<<<< HEAD
 <div class="col-xl-6 push-xl-3 m-2-md col-sm-8 push-sm-2">
+=======
+<div class="col-xl-6 offset-md-3 offset-sm-2 col-sm-8">
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 <div class="card">
     <div class="card-block">
         <div class="card-title text-xs-center">
@@ -120,11 +134,19 @@
         {{/error}}
 
         <div class="row">
+<<<<<<< HEAD
             <div class="col-md-4 push-md-1">
                 <form class="m-t-1" action="{{loginurl}}" method="post" id="login">
                     <input id="anchor" type="hidden" name="anchor" value="">
                     <script>document.getElementById('anchor').value = location.hash;</script>
 
+=======
+            <div class="col-md-4 offset-md-1">
+                <form class="m-t-1" action="{{loginurl}}" method="post" id="login">
+                    <input id="anchor" type="hidden" name="anchor" value="">
+                    <script>document.getElementById('anchor').value = location.hash;</script>
+                    <input type="hidden" name="logintoken" value="{{logintoken}}">
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
                     <label for="username" class="sr-onl">
                         {{^canloginbyemail}}
                             {{#str}} username {{/str}}
@@ -153,7 +175,11 @@
                 </form>
             </div>
 
+<<<<<<< HEAD
             <div class="col-md-4 push-md-3">
+=======
+            <div class="col-md-5 offset-md-1">
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
                 <div class="forgetpass m-t-1">
                     <p><a href="{{forgotpasswordurl}}">{{#str}}forgotten{{/str}}</a></p>
                 </div>
@@ -166,6 +192,10 @@
                 <div class="m-t-2">
                     <p>{{#str}}someallowguest{{/str}}</p>
                     <form action="{{loginurl}}" method="post" id="guestlogin">
+<<<<<<< HEAD
+=======
+                        <input type="hidden" name="logintoken" value="{{logintoken}}">
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
                         <input type="hidden" name="username" value="guest" />
                         <input type="hidden" name="password" value="guest" />
                         <button class="btn btn-secondary btn-block" type="submit">{{#str}}loginguest{{/str}}</button>
@@ -198,7 +228,11 @@
 
 {{#hasinstructions}}
 <div class="row">
+<<<<<<< HEAD
 <div class="col-xl-6 push-xl-3 m-2-md col-sm-8 push-sm-2">
+=======
+<div class="col-xl-6 offset-md-3 offset-sm-2 col-sm-8">
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
 <div class="card">
     <div class="card-block">
         <div class="card-title">

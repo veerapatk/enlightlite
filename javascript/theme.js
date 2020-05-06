@@ -22,23 +22,37 @@
 
 $(function(){
 
+<<<<<<< HEAD
     img = $("header#header").find('.avatars').find('img[src$="/u/f2"]');
     src = img.attr('src');
     img.attr('src', src + '_white');
+=======
+    var img = $("nav#header").find('.avatar').find('img[src$="/u/f2"]');
+    var src = img.attr('src');
+    img.attr('src', src + "_white");
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
     msg = $("header#header").find('#nav-message-popover-container .nav-link').find("img[src$='t/message']");
     msgsrc = msg.attr('src');
     msg.attr('src', msgsrc + "_white");
     note = $("header#header").find('#nav-notification-popover-container .nav-link').find("img[src$='i/notifications']");
     notesrc = note.attr('src');
     note.attr('src', notesrc + "_white");
+<<<<<<< HEAD
     $( "table" ).wrap( function() {
+=======
+    /*$( "table" ).wrap( function() {
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
         var ctab_obj = $(this);
         if (ctab_obj.parent('div').hasClass('no-overflow')) {
 
         } else {
             return "<div class='no-overflow'></div>";
         }
+<<<<<<< HEAD
     });
+=======
+    });*/
+>>>>>>> 41a847037bcdce571ca9f5672a6cd6934d226b82
     par = $('#page');
     par.find('h2').each(function(){
         cont = $(this).html();
